@@ -15,4 +15,13 @@ describe('Array', function () {
         // Tidak bisa diubah valuenya, akan terjadi error
         // hobbies[0] = 'Main Game';
     });
+    it('should support tupple', function () {
+        const person = ['Ilham', 'Hakim', 30];
+        console.info(person);
+        console.info(person[0]);
+        console.info(person[1]);
+        console.info(person[2]);
+        // Akan error karena ReadOnly
+        // person[0] = 'Tania';
+    });
 });
